@@ -1,14 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Example Template</title>
+    <title>Test</title>
 </head>
-
 <body>
-    [ functionTeste() ]
+    <h1>Hello, [ name ]!</h1>
+    <p>Number: [ numero ]</p>
+    <p>Boolean: [ bool ]</p>
+    <p>Array Element: </p>
+
+    [$ for arr of array $]
+
+    [$ if arr.id_colaborador == 345 $]
+    [ arr.codigo ]
+    [$ endif $]
+    
+    [$ endfor $]
+
+    <h2>Utilizando funções</h2>
+
+    [$ soma(50, 50) $]
+
 </body>
 
 </html>
