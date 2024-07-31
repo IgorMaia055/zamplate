@@ -16,6 +16,8 @@
         "psr-4": {
             "Zamplate\\": "src/"
         }
-    }
+    },
+    
+    "minimum-stability": "stable",
+    "prefer-stable": true
 }
-
