@@ -17,7 +17,7 @@ $zamplate = new Zamplate($templateDir);
 $zamplate->addFunction('soma', [Helpers::class, 'soma']);
 
 // Renderiza o template com dados
-echo $zamplate->render('example.html', [
+echo $zamplate->renderizar('example.html', [
     'text' => 'World',
     'numero' => 23,
     'bool' => true,
