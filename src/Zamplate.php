@@ -15,4 +15,9 @@ class Zamplate
     {
         return $this->template->render($template, $data);
     }
+
+    public function addFunction(string $name, callable $callback): void
+    {
+        $this->template->addFunction($name, $callback);
+    }
 }
