@@ -2,24 +2,27 @@
 
 require 'vendor/autoload.php';
 
-use Zamplate\Template;
+//Utiliza a classe Zamplate
+use Zamplate\Zamplate;
+
 use Zamplate\Helpers;
 
 // Define o diretório dos templates
 $templateDir = __DIR__ . '/templates';
 
 // Cria uma instância do Zamplate
-$zamplate = new Template($templateDir);
+$zamplate = new Zamplate($templateDir);
 
 // Adicionar funções globais
 $zamplate->addFunction('soma', [Helpers::class, 'soma']);
 
 // Renderiza o template com dados
 echo $zamplate->render('example.html', [
-    'name' => 'text',
+    'text' => 'World',
     'numero' => 23,
     'bool' => true,
-    'array' => [[
+    'array' => [
+        [
             'id' => 345,
             'status' => true,
             'codigo' => 12343
@@ -28,5 +31,6 @@ echo $zamplate->render('example.html', [
             'id' => 456,
             'status' => false,
             'codigo' => 67890
-        ]]
+        ]
+    ]
 ]);
