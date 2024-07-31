@@ -1,0 +1,23 @@
+{
+    "name": "zambiank/zamplate",
+    "description": "Zamplate é um motor de templates para PHP que permite criar layouts HTML dinâmicos de forma organizada e segura. Ele utiliza uma sintaxe limpa para separar a lógica da apresentação, facilitando a manutenção do código. Com suporte a variáveis, herança de templates e recursos de segurança integrados, o Zamplate ajuda a construir sites e aplicações web de maneira eficiente e extensível.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Igor Maia",
+            "email": "igorjobs@zambiank.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Zamplate\\": "src/"
+        }
+    },
+    
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
